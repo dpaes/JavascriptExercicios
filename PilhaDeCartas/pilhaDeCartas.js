@@ -1,0 +1,7 @@
+let pilhaDeCartas = []
+
+do {
+
+    
+
+} while ()
