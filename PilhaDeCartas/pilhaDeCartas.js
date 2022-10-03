@@ -1,7 +1,0 @@
-let pilhaDeCartas = []
-
-do {
-
-    
-
-} while ()
