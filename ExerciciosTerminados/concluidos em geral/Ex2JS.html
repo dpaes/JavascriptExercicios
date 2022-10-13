@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            const carName1 = prompt("Digite o nome do primeiro carro: ")
+            const carSpeed1 = prompt("Digite a velocidade do primeiro carro: ")
+            const carName2 = prompt("Digite o nome do segundo carro: ")
+            const carSpeed2 = prompt("Digite a velocidade do segundo carro: ")
+
+            if(carSpeed1 > carSpeed2) {
+                alert(carName1 + " é mais rápido do que " + carName2)
+            } else if(carSpeed2 > carSpeed1) {
+                alert(carName2 + " é mais rápido do que " + carName1)
+            } else {
+                alert(carName1 + " e " + carName2 + " possuem a mesma velocidade")
+            }
+        </script>
+    </body>
+</html>

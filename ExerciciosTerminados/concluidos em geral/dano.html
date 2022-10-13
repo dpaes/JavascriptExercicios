@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+    <script>
+        const atk_name = prompt("Digite o nome do atacante: ")
+        const damage_atk = prompt("Digite o dano do atacante: ")
+        const def_name = prompt("Digite o nome do defensor: ")
+        let pontosDeVida = prompt("Quantos pontos de vida ele tem: ")
+        const def_points = prompt("Quantos pontos de defesa: ")
+        const h_shield = prompt("possui escudo: ")
+        let damage_cause = 0
+
+            if (atk_name > def_points && h_shield === "Não") {
+            damage_cause = atk_name - def_points
+            } else if (atk_name > def_points && h_shield === "Sim") {
+            damage_cause = (atk_name - def_points) / 2
+            }
+
+            pontosDeVida -= damage_cause
+
+            alert(atacante + " causou " + danoCausado + " pontos de dano em " + defensor)
+            alert(
+                atacante + "\nPoder de ataque: " + poderDeAtaque + "\n\n" +
+                defensor + "\nPontos de vida: " + pontosDeVida +"\nPoder de defesa: " + poderDeDefesa + "\nPossui escudo: " + possuiEscudo
+                )
+    </script>
+    </body>
+</html>

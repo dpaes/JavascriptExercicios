@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+
+    <script>
+
+        const name = prompt("Digite o seu nome: ")
+        let visit = prompt("Responda com sim ou não, se ja visitou alguma cidade? Sim/Nao")
+        let visitS = 0
+        let citys = ""
+
+        while(visit === "Sim") {
+            let city = prompt("Qual cidade você visitou? ")
+            citys += " - " + city + "\n"
+            visitS ++
+            visit = prompt("Visitou mais alguma cidade além dessa? Sim/Nao")
+        }
+        alert("Obrigado " + name + " por compartilhar conosco suas experiências!" + "\nTotal de cidades visitadas: "+ visitS + "\nCidades: \n" + citys)
+
+    </script>
+</body>
+</html>

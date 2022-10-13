@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3JS</title>
+</head>
+<body>
+    <script>
+        const meters = prompt("Digite um valor em metros: ")
+        const whichScale = prompt("Escolha qual das unidades de medida deseja converter: \nMilímetros(mm) \nCentímetros(cm) \nDecímetro(dm) \nDecâmetro(dam) \nHectômetro(hm) \nQuilômetro(km)")
+
+        const mm = whichScale * 1000
+        const cm = whichScale * 100
+        const dm = whichScale * 10
+        const dam = whichScale / 10
+        const hm =  whichScale / 100
+        const km = whichScale / 1000
+
+        let converter = whichScale
+        
+        switch (meters) {
+            case "mm":
+                alert("Conversão resultou em: " + meters + "m = " + meters * 1000 + "mm")
+                break;
+            case "cm":
+                alert("Conversão resultou em: " + meters + "m = " + meters * 100 + "cm")
+                break;
+            case "dm":
+                alert("Conversão resultou em: " + meters + "m = " + meters * 10 + "dm")
+                break;
+            case "dam":
+                alert("Conversão resultou em: " + meters + "m = " + meters / 10 + "dam")
+                break;
+            case "hm":
+                alert("Conversão resultou em: " + meters + "m = " + meters / 100 + "hm")
+                break;
+            case "km":
+                alert("Conversão resultou em: " + meters + "m = " + meters / 1000 + "km")
+                break;
+            default:
+                console.log('Opção Inválida')
+                break;
+        }
+    </script>
+</body>
+</html>
